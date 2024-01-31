@@ -36,6 +36,7 @@
 }
 
 .weather-conditions {
+    margin-bottom: 10px;
     color: #F5F5F5;
     font-family: "Work Sans", serif;
     font-size: 25px;
