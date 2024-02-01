@@ -1,10 +1,10 @@
 import './App.css';
-import LocationAndWeahterDetails from "./components/LocationAndWeatherDetails";
+import LocationAndWeatherDetails from "./components/LocationAndWeatherDetails";
 
 function App() {
     return (
         <>
-            <LocationAndWeahterDetails/>
+            <LocationAndWeatherDetails/>
         </>
     );
 }
