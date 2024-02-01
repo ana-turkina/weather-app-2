@@ -1,10 +1,11 @@
 import './App.css';
-import LocationDetails from "./components/LocationDetails";
+import LocationAndWeahterDetails from "./components/LocationAndWeatherDetails";
+import FiveDayForecast from "./components/FiveDayForecast";
 
 function App() {
     return (
         <>
-            <LocationDetails/>
+            <LocationAndWeahterDetails/>
         </>
     );
 }
