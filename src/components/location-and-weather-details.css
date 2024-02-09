@@ -25,6 +25,11 @@
     line-height: normal;
 }
 
+.location-conditions-and-details-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
 .temperature {
     margin: 0 0 0 68px;
     color: #FFA34E;
@@ -36,7 +41,8 @@
 }
 
 .weather-conditions {
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
+    width: 100%;
     color: #F5F5F5;
     font-family: "Work Sans", serif;
     font-size: 25px;
@@ -49,13 +55,16 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    width: 50%;
 }
 
 .location-weather-details-wrapper {
-    margin: 0 0 0 471px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    width: 50%;
+    justify-content: flex-end;
+    margin-right: 64px;
 }
 
 .location-weather-details {
@@ -143,7 +152,7 @@
     line-height: normal;
 }
 
-.five-day-forecast-wrapper {
+.three-day-forecast-wrapper {
     margin-top: 28px;
     width: 565px;
     height: 303px;
@@ -153,4 +162,8 @@
     border: 1px solid #7D7878;
     background: rgba(125, 120, 120, 0.10);
     box-shadow: 0 0 10px 0 rgba(125, 120, 120, 0.50);
+}
+
+.forecast-chart-wrapper {
+    margin: 0 45px;
 }

@@ -1,7 +1,7 @@
 import './location-and-weather-details.css'
 import {useEffect, useState} from "react";
 import axios from "axios";
-import FiveDayForecast from "./FiveDayForecast";
+import ThreeDayForecast from "./ThreeDayForecast";
 
 function LocationAndWeatherDetails() {
     const [city, setCity] = useState('Reading your location...');
@@ -50,6 +50,7 @@ function LocationAndWeatherDetails() {
                 {
                     weatherData && (
                         <>
+                            <div className="location-conditions-and-details-wrapper">
                             <div className="temperature-conditions-wrapper">
                                 <div className="temperature">
                                     {weatherData.temp_c}°
@@ -57,6 +58,7 @@ function LocationAndWeatherDetails() {
                                 <div className="weather-conditions">
                                     {weatherData.condition.text}
                                 </div>
+                            </div>
                                 <div className="location-weather-details-wrapper">
                                     <div className="location-weather-details">
                                         Feels like: {weatherData.feelslike_c}°
@@ -106,7 +108,7 @@ function LocationAndWeatherDetails() {
                         </div>
                     </div>
                 </div>
-                <FiveDayForecast/>
+                <ThreeDayForecast/>
             </div>
         </>
     );
