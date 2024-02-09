@@ -29,7 +29,7 @@ export const options = {
                     size: 20,
                     style: 'normal',
                     weight: 500,
-                //     lineHeight: 0
+                    //     lineHeight: 0
                 },
             }
         }
@@ -109,7 +109,12 @@ function ThreeDayForecast() {
                         </div>
                     </div>
                 ) : (
-                    <p>Loading...</p>
+                    <div className="weather-details-column">
+                        <div className="details-and-forecast-title">3-day Weather Forecast</div>
+                        <div className="three-day-forecast-wrapper">
+                            <div className="details-and-forecast-title">Loading Data...</div>
+                        </div>
+                    </div>
                 )}
         </>
     )
